@@ -1,6 +1,6 @@
 {
   "name": "react-app-tools",
-  "version": "3.1.0-preview.7",
+  "version": "3.1.0",
   "description": "Build and test tooling for web application development with Node.js and React.",
   "repository": "kriasoft/react-app",
   "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
@@ -103,8 +103,8 @@
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4",
     "webpack-node-externals": "^1.7.2",
-    "write-file-webpack-plugin": "^4.5.0",
-    "workbox-webpack-plugin": "3.6.3"
+    "workbox-webpack-plugin": "3.6.3",
+    "write-file-webpack-plugin": "^4.5.0"
   },
   "devDependencies": {
     "react": "^16.3.2",
