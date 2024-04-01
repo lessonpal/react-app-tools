@@ -1,25 +1,24 @@
 /**
- * Copyright © 2016-present Kriasoft. All rights reserved.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
 
-'use strict';
+"use strict";
 
-const nodeExternals = require('webpack-node-externals');
-const WriteFilePlugin = require('write-file-webpack-plugin');
-const paths = require('./paths');
+const nodeExternals = require("webpack-node-externals");
+const WriteFilePlugin = require("write-file-webpack-plugin");
+const paths = require("./paths");
 
-module.exports = function(env) {
-  const config = require('./webpack.config')(env, 'node');
+module.exports = function (env) {
+  const config = require("./webpack.config")(env, "node");
   return [
     // Client configuration
-    require('./webpack.config')(env),
+    require("./webpack.config")(env),
     // Server configuration
     Object.assign({}, config, {
-      name: 'server',
-      target: 'node',
+      name: "server",
+      target: "node",
       node: false,
 
       entry: {
@@ -28,8 +27,8 @@ module.exports = function(env) {
 
       output: Object.assign({}, config.output, {
         path: paths.nodeBuild,
-        filename: '[name].js',
-        libraryTarget: 'commonjs2',
+        filename: "[name].js",
+        libraryTarget: "commonjs2",
       }),
 
       optimization: Object.assign({}, config.optimization, {
@@ -44,7 +43,7 @@ module.exports = function(env) {
         }),
       ]),
 
-      externals: ['./stats.json', nodeExternals()],
+      externals: ["./stats.json", nodeExternals()],
     }),
   ];
 };
