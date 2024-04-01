@@ -1,12 +1,8 @@
 {
-  "name": "react-app-tools",
-  "version": "3.1.0",
+  "name": "react-app-tools-v2",
+  "version": "3.1.2",
   "description": "Build and test tooling for web application development with Node.js and React.",
-  "repository": "kriasoft/react-app",
-  "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
-  "contributors": [
-    "Konstantin Tarkus <hello@tarkus.me> (https://tarkus.me)"
-  ],
+  "repository": "lessonpal/react-app",
   "license": "MIT",
   "keywords": [
     "react",
@@ -24,7 +20,7 @@
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/kriasoft/react-app/issues"
+    "url": "https://github.com/lessonpal/react-app/issues"
   },
   "files": [
     "bin",
@@ -42,6 +38,7 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "7.2.2",
+    "@babel/helper-string-parser": "^7.24.1",
     "@babel/plugin-proposal-class-properties": "7.3.0",
     "@babel/plugin-proposal-decorators": "7.3.0",
     "@babel/plugin-proposal-object-rest-spread": "7.3.2",
